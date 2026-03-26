@@ -6,6 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #fff;
   color: #2e2f42;
+  margin: 0
 }
 
 ul {
@@ -48,8 +49,22 @@ a {
   margin-right: auto;
 }
 
+/* header */
+
 .header {
   padding-block: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .logo {
@@ -60,6 +75,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .logo-footer {
@@ -78,6 +94,12 @@ a {
 
 address {
   font-style: normal;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .mail {
@@ -110,6 +132,9 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: flex;
+  align-items: center;
+  margin-right: 332px;
 }
 
 .navigation-section {
@@ -125,9 +150,17 @@ address {
   color: #404bbf;
 }
 
+/* hero */
+
 .hero {
   background: #2e2f42;
-  padding: 188px 472px 188px 472px;
+  /* padding: 188px 472px 188px 472px; */
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-title {
@@ -137,8 +170,15 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
+  width: 496px;
   margin-bottom: 42px;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 188px 472px 188px 472px;
 }
 
 .service {
@@ -151,6 +191,8 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  padding: 16px 32px;
+  border-radius: 8px;
 }
 
 .service:hover,
@@ -158,9 +200,20 @@ address {
   background: #404bbf;
 }
 
+/* team */
+
 .team {
   background: #f4f4fd;
   padding-block: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-info {
+  margin-block: 32px;
 }
 
 .team-member {
@@ -169,6 +222,7 @@ address {
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+  height: 380px;
 }
 
 .team-title {
@@ -178,6 +232,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-member-name {
@@ -197,10 +252,18 @@ address {
   color: #434455;
 }
 
+/* features */
+
 .features {
-  margin-top: 6px;
   padding-block: 156px;
 }
+
+.features-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .feature-name {
   font-weight: 500;
   font-size: 20px;
@@ -217,6 +280,8 @@ address {
   color: #434455;
 }
 
+/* portfolio */
+
 .portfolio {
   font-weight: 700;
   font-size: 36px;
@@ -224,7 +289,26 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
+
+.portfolio-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  margin-bottom: 120px;
+}
+
+.portfolio-item-info {
+  padding: 32px 172px 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
 .portfolio-item-name {
   font-weight: 500;
   font-size: 20px;
@@ -232,6 +316,7 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .portfolio-item-description {
   font-size: 16px;
   line-height: 1.5;
@@ -239,8 +324,17 @@ address {
   color: #434455;
 }
 
+/* footer */
+
 .footer {
   background: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-block: 100px;
+  padding-left: 156px;
 }
 
 .footer-text {
@@ -248,6 +342,8 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+  margin-top: 16px;
 }
 
 .logo-footer {
