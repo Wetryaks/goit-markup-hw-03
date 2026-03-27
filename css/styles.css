@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #fff;
   color: #2e2f42;
-  margin: 0
+  margin: 0;
 }
 
 ul {
@@ -47,12 +47,12 @@ a {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-inline: 15px;
 }
 
 /* header */
 
 .header {
-  padding-block: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -76,6 +76,7 @@ a {
   text-transform: uppercase;
   color: #2e2f42;
   margin-right: 76px;
+  padding-block: 24px;
 }
 
 .logo-footer {
@@ -107,6 +108,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-block: 24px;
 }
 
 .number {
@@ -114,6 +116,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-block: 24px;
 }
 
 .mail:hover,
@@ -134,7 +137,7 @@ address {
   color: #2e2f42;
   display: flex;
   align-items: center;
-  margin-right: 332px;
+  padding-right: 332px;
 }
 
 .navigation-section {
@@ -143,6 +146,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-block: 24px;
 }
 
 .navigation-section:hover,
@@ -171,14 +175,14 @@ address {
   text-align: center;
   color: #fff;
   width: 496px;
-  margin-bottom: 42px;
+  margin-bottom: 48px;
 }
 
 .hero-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 188px 472px 188px 472px;
+  padding: 188px 472px 188px 472px;
 }
 
 .service {
@@ -192,7 +196,8 @@ address {
   letter-spacing: 0.04em;
   color: #fff;
   padding: 16px 32px;
-  border-radius: 8px;
+  border-radius: 4px;
+  border: none;
 }
 
 .service:hover,
@@ -213,7 +218,11 @@ address {
 }
 
 .team-info {
-  margin-block: 32px;
+  padding: 32px 16px;
+}
+
+.team-img {
+  border-radius: 0 0 4px 4px;
 }
 
 .team-member {
@@ -255,13 +264,17 @@ address {
 /* features */
 
 .features {
-  padding-block: 156px;
+  padding-block: 120px;
 }
 
 .features-list {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .feature-name {
@@ -282,6 +295,10 @@ address {
 
 /* portfolio */
 
+.portfolio-container {
+  padding-block: 120px;
+}
+
 .portfolio {
   font-weight: 700;
   font-size: 36px;
@@ -289,7 +306,6 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 120px;
   margin-bottom: 72px;
 }
 
@@ -299,11 +315,10 @@ address {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  margin-bottom: 120px;
 }
 
 .portfolio-item-info {
-  padding: 32px 172px 32px 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -328,13 +343,15 @@ address {
 
 .footer {
   background: #2e2f42;
+  padding-block: 100px;
+  padding-left: 156px;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding-block: 100px;
-  padding-left: 156px;
+  /* padding-block: 100px;
+  padding-left: 156px;*/
 }
 
 .footer-text {
